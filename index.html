@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/mundo-w-inventario/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <meta name="theme-color" content="#0f2557" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Mundo W Activos" />
+    <link rel="manifest" href="/mundo-w-inventario/manifest.webmanifest" />
+    <title>Mundo W Corp — Control de Activos</title>
+    <script>
+      // Complemento del truco de 404.html: restaura la ruta original
+      // que vino codificada en la query string.
+      (function (l) {
+        if (l.search[1] === '/') {
+          var decoded = l.search
+            .slice(1)
+            .split('&')
+            .map(function (s) {
+              return s.replace(/~and~/g, '&')
+            })
+            .join('?')
+          window.history.replaceState(null, null, l.pathname.slice(0, -1) + decoded + l.hash)
+        }
+      })(window.location)
+    </script>
+    <script type="module" crossorigin src="/mundo-w-inventario/index-_bA5iWwB.js"></script>
+    <link rel="stylesheet" crossorigin href="/mundo-w-inventario/index-COl2WGmA.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>

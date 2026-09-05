@@ -1,0 +1,11 @@
+{
+  "name": "Mundo W Corp - Control de Activos",
+  "short_name": "MW Activos",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f4f6fa",
+  "theme_color": "#0f2557",
+  "icons": [
+    { "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}
